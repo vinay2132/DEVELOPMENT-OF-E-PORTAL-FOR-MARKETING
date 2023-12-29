@@ -1,0 +1,592 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
+
+    <title>Digital Trend</title>
+    <!--
+SOFTY PINKO
+https://templatemo.com/tm-535-softy-pinko
+-->
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="../../assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="../../assets/css/templatemo-softy-pinko.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Heebo:400,700|Open+Sans:400,700');
+         :root {
+            --color: #3c3163;
+            --transition-time: 0.5s;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: 'Open Sans';
+            background: #fafafa;
+        }
+        
+        a {
+            color: inherit;
+        }
+        
+        .cards-wrapper {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 4rem;
+            padding: 4rem;
+            margin: 0 auto;
+            width: max-content;
+        }
+        
+        .card {
+            font-family: 'Heebo';
+            --bg-filter-opacity: 0.5;
+            background-image: linear-gradient(rgba(0, 0, 0, var(--bg-filter-opacity)), rgba(0, 0, 0, var(--bg-filter-opacity))), var(--bg-img);
+            height: 20em;
+            width: 15em;
+            font-size: 1.5em;
+            color: white;
+            border-radius: 1em;
+            padding: 1em;
+            /*margin: 2em;*/
+            display: flex;
+            align-items: flex-end;
+            background-size: cover;
+            background-position: center;
+            box-shadow: 0 0 5em -1em black;
+            transition: all, var(--transition-time);
+            position: relative;
+            overflow: hidden;
+            border: 10px solid #ccc;
+            text-decoration: none;
+        }
+        
+        .card:hover {
+            transform: rotate(0);
+        }
+        
+        .card h1 {
+            margin: 0;
+            font-size: 1.5em;
+            line-height: 1.2em;
+        }
+        
+        .card p {
+            font-size: 0.75em;
+            font-family: 'Open Sans';
+            margin-top: 0.5em;
+            line-height: 2em;
+        }
+        
+        .card .tags {
+            display: flex;
+        }
+        
+        .card .tags .tag {
+            font-size: 0.75em;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 0.3rem;
+            padding: 0 0.5em;
+            margin-right: 0.5em;
+            line-height: 1.5em;
+            transition: all, var(--transition-time);
+        }
+        
+        .card:hover .tags .tag {
+            background: var(--color);
+            color: white;
+        }
+        
+        .card .date {
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 0.75em;
+            padding: 1em;
+            line-height: 1em;
+            opacity: .8;
+        }
+        
+        .card:before,
+        .card:after {
+            content: '';
+            transform: scale(0);
+            transform-origin: top left;
+            border-radius: 50%;
+            position: absolute;
+            left: -50%;
+            top: -50%;
+            z-index: -5;
+            transition: all, var(--transition-time);
+            transition-timing-function: ease-in-out;
+        }
+        
+        .card:before {
+            background: #ddd;
+            width: 250%;
+            height: 250%;
+        }
+        
+        .card:after {
+            background: white;
+            width: 200%;
+            height: 200%;
+        }
+        
+        .card:hover {
+            color: var(--color);
+        }
+        
+        .card:hover:before,
+        .card:hover:after {
+            transform: scale(1);
+        }
+        
+        .card-grid-space .num {
+            font-size: 3em;
+            margin-bottom: 1.2rem;
+            margin-left: 1rem;
+        }
+        
+        .info {
+            font-size: 1.2em;
+            display: flex;
+            padding: 1em 3em;
+            height: 3em;
+        }
+        
+        .info img {
+            height: 3em;
+            margin-right: 0.5em;
+        }
+        
+        .info h1 {
+            font-size: 1em;
+            font-weight: normal;
+        }
+        /* MEDIA QUERIES */
+        
+        @media screen and (max-width: 1285px) {
+            .cards-wrapper {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        @media screen and (max-width: 900px) {
+            .cards-wrapper {
+                grid-template-columns: 1fr;
+            }
+            .info {
+                justify-content: center;
+            }
+        }
+        
+        @media screen and (max-width: 500px) {
+            .cards-wrapper {
+                padding: 4rem 2rem;
+            }
+            .card {
+                max-width: calc(100vw - 4rem);
+            }
+        }
+        
+        @media screen and (max-width: 450px) {
+            .info {
+                display: block;
+                text-align: center;
+            }
+            .info h1 {
+                margin: 0;
+            }
+        }
+        
+        .hero {
+            position: relative;
+            padding: 9em 0;
+            overflow: hidden;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(170deg, var(--primary-color) 70%, var(--white-color) 30%);
+        }
+        
+        .hero-image {
+            position: relative;
+            top: 2em;
+        }
+        
+        .a {
+            background: var(--menu-bg);
+            z-index: 2;
+            top: 0;
+            right: 0;
+            left: 0;
+        }
+        /* BUTTON */
+        
+        .custom-btn {
+            background: transparent;
+            border: 2px solid var(--dark-color);
+            border-radius: var(--border-radius-large);
+            padding: 12px 26px 14px 26px;
+            color: var(--dark-color);
+            font-family: var(--title-font-family);
+            font-size: var(--p-font-size);
+            white-space: nowrap;
+        }
+        
+        .custom-btn.btn-bg {
+            background: var(--white-color);
+            color: var(--primary-color);
+            border-color: transparent;
+            transition: all .3s ease;
+        }
+        
+        .custom-btn:hover,
+        .custom-btn:focus {
+            background: var(--dark-color);
+            color: var(--white-color);
+            border-color: transparent;
+        }
+        
+         :root {
+            --background-dark: #ffffff;
+            --text-light: rgba(255, 255, 255, 0.6);
+            --text-lighter: rgba(255, 255, 255, 0.9);
+            --spacing-s: 8px;
+            --spacing-m: 16px;
+            --spacing-l: 24px;
+            --spacing-xl: 32px;
+            --spacing-xxl: 64px;
+            --width-container: 1200px;
+        }
+        
+        * {
+            border: 0;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            height: 100%;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+        }
+        
+        body {
+            height: 100%;
+        }
+        
+        .hero-section {
+            align-items: flex-start;
+            /*background-image: linear-gradient(15deg, #0f4667 0%, #2a6973 150%);*/
+            display: flex;
+            min-height: 100%;
+            justify-content: center;
+            padding: var(--spacing-xxl) var(--spacing-l);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="a"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+
+                        <!--<img src="assets/images/logo.png" alt="Softy Pinko"/>-->
+
+                        <a class="logo" style="font-size: 25px;" style="color:#8261ee;"><i class="fa fa-line-chart"></i> <strong>Digital Trend</strong></a>
+
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a href="../../index.html">Home</a></li>
+                            <li><a href="../../aboutus.html">About</a></li>
+                            <li><a href="enterpreners.html">Entrepreneurs</a></li>
+                            <li><a href="mentor.html">Mentor</a></li>
+                            <li><a href="investor.html">Investor</a></li>
+                            <li><a href="#" class="active">Blog Entries</a></li>
+                            <li><a href="../contactfrom/contact.html">Contact Us</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Welcome Area Start ***** -->
+
+    <section class="hero hero-bg d-flex justify-content-center align-items-center" style="
+padding-bottom: 30px;
+">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-md-10 col-12 d-flex flex-column justify-content-center align-items-center">
+                    <div class="hero-text">
+
+                        <h1 class="text-white aos-init aos-animate" data-aos="fade-up">Lets Talk About MARKETING WEBSITES BLOG By Us</h1>
+                        <br>
+
+                        <!--<strong class="d-block py-3 pl-5 text-white aos-init aos-animate" data-aos="fade-up" data-aos-delay="200"><i class="fa fa-phone mr-2"></i> +99 080 070 4224</strong>-->
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-12">
+                    <div class="hero-image aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+
+                        <img src="../../assets/images/imageedit_1_2467413779.png" class="img-fluid" alt="working girl">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="center-heading">
+                <h2 class="section-title" style="
+                padding-top: 20px;
+            ">MARKETING WEBSITES BLOG</h2>
+            </div>
+        </div>
+        <div class="offset-lg-3 col-lg-6">
+            <div class="center-text">
+                <p>insightful information about digital marketing, web design and app development</p>
+
+            </div>
+        </div>
+    </div>
+    <section class="cards-wrapper" style="
+    padding-top: 13px;
+">
+        <div class="card-grid-space">
+            <div class="num">01</div>
+            <a class="card" href="https://codetheweb.blog/2017/10/06/html-syntax/" style="--bg-img: url(https://assets.landingi.com/wp-content/uploads/2020/06/07084318/lead-generation-ideas-cover.jpg)">
+                <div>
+                    <div class="date">9 Oct 2017</div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                    <h1>Best Lead Generation Sites </h1>
+                    <p>There are a lot of real estate lead generation websites out there and it can be ...</p>
+
+                    <div class="tags">
+                        <div class="tag">Read More</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="card-grid-space">
+            <div class="num">02</div>
+            <a class="card" href="https://codetheweb.blog/2017/10/09/basic-types-of-html-tags/" style="--bg-img: url('https://i.pinimg.com/originals/59/79/cb/5979cb332835446672e54bafa6f8ace0.gif')">
+                <div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <h1>Deciding on Which Logo </h1>
+                    <p>Your logo is the face of your brand. It will be used across all of your marketing...</p>
+                    <div class="date">9 Oct 2017</div>
+                    <div class="tags">
+                        <div class="tag">Read More</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="card-grid-space">
+            <div class="num">03</div>
+            <a class="card" href="https://codetheweb.blog/2017/10/14/links-images-about-file-paths/" style="--bg-img: url('https://www.apsguide.com/wp-content/uploads/2020/07/Google-Ads-vs.-Facebook-Ads.jpg')">
+                <div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <h1>Facebook Ads vs Google Ads</h1>
+                    <p>As a realtor, lead generation is a top priority. Choosing the right platform for your...</p>
+                    <div class="date">14 Oct 2017</div>
+                    <div class="tags">
+                        <div class="tag">Read More</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="card-grid-space">
+            <div class="num">04</div>
+            <a class="card" href="https://codetheweb.blog/2017/10/14/links-images-about-file-paths/" style="--bg-img: url('https://blog.advids.co/wp-content/uploads//2017/04/brand.gif')">
+                <div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <h1>Branding Strategy: </h1>
+                    <p>A simple look at the major, well-known brands and you begin to see...</p>
+                    <div class="date">14 Oct 2017</div>
+                    <div class="tags">
+                        <div class="tag">Read More</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- https://images.unsplash.com/photo-1520839090488-4a6c211e2f94?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=38951b8650067840307cba514b554ba5&auto=format&fit=crop&w=1350&q=80 -->
+    </section>
+
+    <!-- ***** Contact Us Start ***** -->
+    <section class="section colored" id="contact-us" style="
+      padding-top: 30px;
+  ">
+        <div class="container">
+            <!-- ***** Section Title Start ***** -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="center-heading">
+                        <h2 class="section-title">Talk To Us</h2>
+                    </div>
+                </div>
+                <div class="offset-lg-3 col-lg-6">
+                    <div class="center-text">
+                        <!-- <p>Maecenas pellentesque ante faucibus lectus vulputate sollicitudin. Cras feugiat hendrerit semper.</p>
+                          -->
+                    </div>
+                </div>
+            </div>
+            <!-- ***** Section Title End ***** -->
+
+            <div class="row">
+                <!-- ***** Contact Text Start ***** -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <h5 class="margin-bottom-30">Keep in touch</h5>
+                    <div class="contact-text">
+                        <!--<p>110-220 Quisque diam odio, maximus ac consectetur eu, 10260
+                              <br>auctor non lorem</p>
+                          <p>You are NOT allowed to re-distribute Softy Pinko template on any template collection websites. Thank you.</p>
+                          -->
+                        <p>
+                            Our team consists of engineers and marketing professionals who are passionate about their work and is in constant contact with their customers to find the best solutions to help them reach their objectives. We understand our customers and embrace their
+                            needs, we strive towards building close and positive relationships through providing a VIP service with a personal touch!
+                        </p>
+                    </div>
+                </div>
+                <!-- ***** Contact Text End ***** -->
+
+                <!-- ***** Contact Form Start ***** -->
+                <div class="col-lg-8 col-md-6 col-sm-12">
+                    <div class="contact-form">
+                        <form id="contact" action="../contactfrom/backcontactus.php" method="POST">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                    <fieldset>
+                                        <input name="names" type="text" class="form-control" id="names" placeholder="Full Name" required="">
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                    <fieldset>
+                                        <input name="email" type="email" class="form-control" id="email" placeholder="E-Mail Address" required="">
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-12">
+                                    <fieldset>
+                                        <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-12">
+                                    <fieldset>
+                                        <button type="submit" id="form-submit" class="main-button">Send Message</button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- ***** Contact Form End ***** -->
+            </div>
+        </div>
+    </section>
+    <!-- ***** Contact Us End ***** -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <ul class="social">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-12">
+                    <!----  <p class="copyright">Copyright &copy; 2020 Softy Pinko Company - Design: TemplateMo</p>
+                  -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="../../assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="../../assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="../../assets/js/scrollreveal.min.js"></script>
+    <script src="../../assets/js/waypoints.min.js"></script>
+    <script src="../../assets/js/jquery.counterup.min.js"></script>
+    <script src="../../assets/js/imgfix.min.js"></script>
+
+    <!-- Global Init -->
+    <script src="../../assets/js/custom.js"></script>
+</body>
+
+</html>

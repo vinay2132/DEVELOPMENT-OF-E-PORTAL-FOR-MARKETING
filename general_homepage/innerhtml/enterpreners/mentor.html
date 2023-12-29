@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
+
+    <title>Digital Trend</title>
+    <!--
+SOFTY PINKO
+https://templatemo.com/tm-535-softy-pinko
+-->
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="../../assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="../../assets/css/templatemo-softy-pinko.css">
+
+    <style>
+        .hero {
+            position: relative;
+            padding: 9em 0;
+            overflow: hidden;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(170deg, var(--primary-color) 70%, var(--white-color) 30%);
+        }
+        
+        .hero-image {
+            position: relative;
+            top: 2em;
+        }
+        
+        .a {
+            background: var(--menu-bg);
+            z-index: 2;
+            top: 0;
+            right: 0;
+            left: 0;
+        }
+        /* BUTTON */
+        
+        .custom-btn {
+            background: transparent;
+            border: 2px solid var(--dark-color);
+            border-radius: var(--border-radius-large);
+            padding: 12px 26px 14px 26px;
+            color: var(--dark-color);
+            font-family: var(--title-font-family);
+            font-size: var(--p-font-size);
+            white-space: nowrap;
+        }
+        
+        .custom-btn.btn-bg {
+            background: var(--white-color);
+            color: var(--primary-color);
+            border-color: transparent;
+            transition: all .3s ease;
+        }
+        
+        .custom-btn:hover,
+        .custom-btn:focus {
+            background: var(--dark-color);
+            color: var(--white-color);
+            border-color: transparent;
+        }
+        
+         :root {
+            --background-dark: #ffffff;
+            --text-light: rgba(255, 255, 255, 0.6);
+            --text-lighter: rgba(255, 255, 255, 0.9);
+            --spacing-s: 8px;
+            --spacing-m: 16px;
+            --spacing-l: 24px;
+            --spacing-xl: 32px;
+            --spacing-xxl: 64px;
+            --width-container: 1200px;
+        }
+        
+        * {
+            border: 0;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            height: 100%;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+        }
+        
+        body {
+            height: 100%;
+        }
+        
+        .hero-section {
+            align-items: flex-start;
+            /*background-image: linear-gradient(15deg, #0f4667 0%, #2a6973 150%);*/
+            display: flex;
+            min-height: 100%;
+            justify-content: center;
+            padding: var(--spacing-xxl) var(--spacing-l);
+        }
+        
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-column-gap: var(--spacing-l);
+            grid-row-gap: var(--spacing-l);
+            max-width: var(--width-container);
+            width: 100%;
+        }
+        
+        @media(min-width: 540px) {
+            .card-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media(min-width: 960px) {
+            .card-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+        
+        .card {
+            list-style: none;
+            position: relative;
+        }
+        
+        .card:before {
+            content: '';
+            display: block;
+            padding-bottom: 150%;
+            width: 100%;
+        }
+        
+        .card__background {
+            background-size: cover;
+            background-position: center;
+            border-radius: var(--spacing-l);
+            bottom: 0;
+            filter: brightness(0.75) saturate(1.2) contrast(0.85);
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transform-origin: center;
+            transition: filter 200ms linear, transform 200ms linear;
+        }
+        
+        .card:hover .card__background {
+            transform: scale(1.05) translateZ(0);
+        }
+        
+        .card-grid:hover>.card:not(:hover) .card__background {
+            filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+        }
+        
+        .card__content {
+            left: 0;
+            padding: var(--spacing-l);
+            position: absolute;
+            top: 0;
+        }
+        
+        .card__category {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: var(--spacing-s);
+            text-transform: uppercase;
+        }
+        
+        .card__heading {
+            color: var(--text-lighter);
+            font-size: 1.9rem;
+            text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+            line-height: 1.4;
+            word-spacing: 100vw;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="a"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+
+                        <!--<img src="assets/images/logo.png" alt="Softy Pinko"/>-->
+
+                        <a class="logo" style="font-size: 25px;" style="color:#8261ee;"><i class="fa fa-line-chart"></i> <strong>Digital Trend</strong></a>
+
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a href="../../index.html">Home</a></li>
+                            <li><a href="../../aboutus.html">About</a></li>
+                            <li><a href="enterpreners.html">Entrepreneurs</a></li>
+                            <li><a href="#" class="active">Mentor</a></li>
+                            <li><a href="investor.html">Investor</a></li>
+                            <li><a href="blogs.html">Blog Entries</a></li>
+                            <li><a href="../contactfrom/contact.html">Contact Us</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Welcome Area Start ***** -->
+
+    <section class="hero hero-bg d-flex justify-content-center align-items-center" style="
+    padding-bottom: 30px;
+">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-md-10 col-12 d-flex flex-column justify-content-center align-items-center">
+                    <div class="hero-text">
+
+                        <h1 class="text-white aos-init aos-animate" data-aos="fade-up">Lets Talk About Mentoring Services Provided By Us</h1>
+                        <br>
+
+                        <!--<strong class="d-block py-3 pl-5 text-white aos-init aos-animate" data-aos="fade-up" data-aos-delay="200"><i class="fa fa-phone mr-2"></i> +99 080 070 4224</strong>-->
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-12">
+                    <div class="hero-image aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+
+                        <img src="https://i.pinimg.com/originals/cf/6f/cf/cf6fcf14be2cd01dd4923b36445ca632.gif" class="img-fluid" alt="working girl">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ***** Features Big Item End ***** -->
+
+    <br>
+    <br>
+    <!-- ***** Features Big Item Start ***** -->
+    <section class="section padding-bottom-100" style="
+    padding-top: 20px;
+">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-bottom-fix">
+                    <div class="left-heading">
+                        <h2 class="section-title">About business mentor </h2>
+                    </div>
+                    <div class="left-text">
+                        <p>At MW Inc., we take pride in listening, setting goals, and building a digital platform that is truly a mirror of your brand. Innovating strategies that help you achieve your goals is what we’re most passionate about. If you succeed,
+                            so do we. Discover the added-value of working with an agency that actually knows you! </p>
+                    </div>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-5 col-md-12 col-sm-12 align-self-center mobile-bottom-fix-big" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                    <img src="https://escalationlab.com/assets/img/portfolio/edu-learn.gif" class="rounded img-fluid d-block mx-auto" alt="App">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Features Big Item End ***** -->
+
+    <!-- ***** Contact Us Start ***** -->
+    <section class="section colored" id="contact-us" style="
+    padding-top: 30px;
+">
+        <div class="container">
+            <!-- ***** Section Title Start ***** -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="center-heading">
+                        <h2 class="section-title">Welcome Back!</h2>
+                    </div>
+                </div>
+                <div class="offset-lg-3 col-lg-6">
+                    <div class="center-text">
+                        <p>To keep connected with us please login with your Personal info</p>
+
+                    </div>
+                </div>
+            </div>
+            <!-- ***** Section Title End ***** -->
+
+            <div class="row">
+                <!-- ***** Contact Text Start ***** -->
+                <div class="col-lg-5 col-md-12 col-sm-12 align-self-center" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <img src="../../../general_homepage/assets/images/sign-in---character-for-animation.gif" class="rounded img-fluid d-block mx-auto" alt="App">
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-top-fix">
+                    <div class="contact-form">
+                        <form id="contact" action="enterpreners-inside/enterprenersignin/mentorshipvarify.php" method="POST">
+                            <div class="row">
+                                <div class="col-lg-10 col-md-12 col-sm-12">
+                                    <fieldset>
+                                        <input name="email" type="email" class="form-control" id="email" placeholder="E-Mail Address" required="">
+                                    </fieldset>
+                                </div>
+                                <br>
+                                <div class="col-lg-10 col-md-12 col-sm-12">
+                                    <fieldset>
+                                        <input name="password" type="password" class="form-control" id="password" placeholder="Password" required="">
+                                    </fieldset>
+                                </div>
+
+                                <div class="col-lg-12">
+                                    <fieldset>
+                                        <button type="submit" id="form-submit" class="main-button">Sign in</button>
+                                    </fieldset>
+                                </div>
+                                <br>
+                                <div class="col-lg-10 col-md-12 col-sm-12">
+                                    <center>
+
+                                        <br>
+                                        <p>Not a User? <a href="enterpreners-inside\enterprenersignin\mentorshipsignin.html"> Sign Up </a> </p>
+
+
+                                    </center>
+                                    <center>
+                                        <br>
+                                        <p>
+                                            <a href="enterpreners-inside\enterprenersignin\mentors_forgot.html">Forgot password?</a>
+                                        </p>
+                                    </center>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- ***** Contact Form End ***** -->
+            </div>
+        </div>
+    </section>
+    <!-- ***** Contact Us End ***** -->
+
+    <!-- ***** Footer Start ***** -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <ul class="social">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-12">
+                    <!----  <p class="copyright">Copyright &copy; 2020 Softy Pinko Company - Design: TemplateMo</p>
+                  -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="../../assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="../../assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="../../assets/js/scrollreveal.min.js"></script>
+    <script src="../../assets/js/waypoints.min.js"></script>
+    <script src="../../assets/js/jquery.counterup.min.js"></script>
+    <script src="../../assets/js/imgfix.min.js"></script>
+
+    <!-- Global Init -->
+    <script src="../../assets/js/custom.js"></script>
+
+</body>
+
+</html>
