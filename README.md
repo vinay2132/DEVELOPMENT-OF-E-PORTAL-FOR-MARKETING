@@ -28,7 +28,7 @@ The **E-Portal for Marketing** is a web application designed to support small an
 ## Installation
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-repo/e-portal-marketing.git
+   git clone https://github.com/vinay2132/e-portal-marketing.git
    cd e-portal-marketing
    ```
 2. **Set Up Environment**:
